@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="rigayen.css">
+</head>
+<body>
+    <div class="notebook-container">
+        <h2>My Diary</h2>
+        <button id="add-entry-btn">+</button>
+        <div class="entries-list" id="entries-list"></div>
+    </div>
+    
+    <div class="entry-modal hidden" id="entry-modal">
+        <div class="entry-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <input type="date" id="entry-date">
+            <div class="emoji-picker">
+                <span>😀</span> <span>😢</span> <span>😡</span> <span>😴</span> <span>😍</span>
+            </div>
+            <textarea id="diary-text" placeholder="Another day, another drama? Spill the tea... ☕"></textarea>
+            <button id="save-btn">Save</button>
+            <button id="delete-btn">Delete Entry</button>
+        </div>
+    </div>
+    
+    <script src="rigayen.js"></script>
+</body>
+</html>
